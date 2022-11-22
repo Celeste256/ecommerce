@@ -3,6 +3,7 @@ import { View, Text, Button, StyleSheet, TextInput } from "react-native";
 import Responsive from "react-native-lightweight-responsive";
 import { MyButton } from "../../../components/Form/MyButton";
 import { MyInput } from "../../../components/Form/MyInput";
+import { SocialButton } from "../../../components/Form/SocialButton";
 import theme from "../../../global/style/theme";
 
 const Login = () => {
@@ -15,6 +16,13 @@ const Login = () => {
         <Text style={styles.inputTitle}>Password</Text>
         <MyInput />
         <MyButton title="Entrar" />
+        <View style={{ alignItems: "center" }}>
+          <Text style={styles.subTitle}>ou acesse com suas redes sociais</Text>
+        </View>
+        <View style={styles.social}>
+          <SocialButton name="twitter" title="Twitter" />
+          <SocialButton name="facebook" title="Facebook" btnColor="" />
+        </View>
       </View>
     </View>
   );
@@ -48,6 +56,14 @@ const styles = StyleSheet.create({
     fontSize: Responsive.font(13),
     borderColor: theme.colors.subtitle,
     marginBottom: Responsive.font(16),
+  },
+  subTitle: {
+    fontSize: Responsive.font(14),
+    color: theme.colors.subtitle,
+  },
+  social: {
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
 });
 
