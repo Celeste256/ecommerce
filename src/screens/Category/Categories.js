@@ -1,5 +1,8 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet, TextInput,  } from "react-native";
+import { MyInput } from "../../components/Form/MyInput";
+import { MyPlaceholder } from "../../components/Form/MyPlaceholder";
+import theme from "../../global/style/theme";
 
 const Categories = () => {
   return (
@@ -11,10 +14,18 @@ const Categories = () => {
 
 export { Categories };
 
-const syles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+  },
+  social: {
+    flexDirection: "row",
+  },
+  inputTitle: {
+    fontSize: Responsive.font(14),
+    color: theme.colors.primary,
+    fontWeight: "bold",
   },
 });
