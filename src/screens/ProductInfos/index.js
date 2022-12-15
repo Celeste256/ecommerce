@@ -101,8 +101,8 @@ const styles = StyleSheet.create({
         padding: Responsive.font(12)
       },
     subTitle: {
-        fontSize: Responsive.font(14),
-        color: theme.subTitle,
+        fontSize: Responsive.font(12),
+        color: "#595959",
         padding: Responsive.font(12)
     },
     button: {
@@ -119,7 +119,12 @@ const styles = StyleSheet.create({
         borderStyle: 'solid',
     },
     imgBorder: {
-        borderWidth: 1
+        borderWidth: 1,
+        borderColor: 'theme.colors.subTitle',
+        padding: Responsive.font(12),
+        marginVertical: Responsive.font(10),
+        marginHorizontal: Responsive.font(10),
+        borderRadius: 5
 
     },
 })
