@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     padding: Responsive.font(8),
     borderRadius: Responsive.font(5),
     alignItems: "center",
-    marginVertical: Resonsive.font(16),
+    marginVertical: Responsive.font(16),
   },
   title: {
     fontWeight: "bold",

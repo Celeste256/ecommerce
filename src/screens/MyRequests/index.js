@@ -1,6 +1,7 @@
 import React from "react"
 import {View, Text, StyleSheet, TextInput, TouchableOpacity} from "react-native"
 import {MaterialCommunityIcons} from '@expo/vector-icons'
+import Responsive from "react-native-lightweight-responsive"
 
 const MyRequests = () => {
     return(
