@@ -6,13 +6,13 @@ import { AppRoutes } from "./src/routes/routes";
 import { CreateAcc } from "./src/screens/User/CreateAccount";
 import { MyRequests } from "./src/screens/MyRequests";
 import { Options } from "./src/screens/Options";
-
+import { ProductInfos } from "./src/screens/ProductInfos";
 
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
-        <Options />
+        <ProductInfos />
       </NavigationContainer>
     </ThemeProvider>
   );
