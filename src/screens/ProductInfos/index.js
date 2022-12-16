@@ -29,7 +29,11 @@ return(
             </View>
             <View style={styles.titleProduct}>
                 <Text style={styles.title}>Nome do Produto</Text>
-                <Button title="categoria"/>
+                <View style={styles.card}>
+                    <View style={styles.cardTitle}>
+                        <Text>Categoria</Text>
+                    </View>
+                </View>
             </View>
             <View>
                 <Text style={styles.title}>R$ 9,99</Text>
@@ -98,7 +102,8 @@ const styles = StyleSheet.create({
         fontSize: Responsive.font(16),
         color: "#000",
         fontWeight: "bold",
-        padding: Responsive.font(12)
+        padding: Responsive.font(12),
+        
       },
     subTitle: {
         fontSize: Responsive.font(12),
@@ -110,7 +115,7 @@ const styles = StyleSheet.create({
     },
     titleProduct: {
         flexDirection: "row",
-        marginVertical: Responsive.font(24)
+        alignItems: "center",
     },
     image: {
         width: null,
@@ -127,4 +132,15 @@ const styles = StyleSheet.create({
         borderRadius: 5
 
     },
+    card: {
+        alignItems:"center",
+        backgroundColor: "#d9d9d9",
+        width: 120,
+        borderRadius: 50,
+        padding: Responsive.font(10),
+        marginHorizontal: Responsive.font(20)
+    },
+    cardTitle: {
+        justifyContent:"center"
+    }
 })

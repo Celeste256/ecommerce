@@ -7,12 +7,13 @@ import { CreateAcc } from "./src/screens/User/CreateAccount";
 import { MyRequests } from "./src/screens/MyRequests";
 import { Options } from "./src/screens/Options";
 import { ProductInfos } from "./src/screens/ProductInfos";
+import { ShoppingCart } from "./src/screens/ShoppingCart";
 
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
-        <ProductInfos />
+        <ShoppingCart />
       </NavigationContainer>
     </ThemeProvider>
   );
